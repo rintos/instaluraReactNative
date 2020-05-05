@@ -1,0 +1,29 @@
+import React, { Fragment } from 'react';
+import {
+    Dimensions,
+    StyleSheet,
+} from 'react-native';
+
+const largura = Dimensions.get("screen").width;
+
+const estilo = StyleSheet.create({
+    imagem: {
+        width: largura,
+        height: largura
+    },
+    like: {
+        width: 40,
+        height: 40,
+        margin: 5
+    },
+    viewLike: {
+        flexDirection:"row",
+        alignItems: "center"
+    },
+    text: {
+        margin: 5
+    }
+
+})
+
+export default estilo;
